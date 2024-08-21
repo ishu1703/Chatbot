@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Product Promotion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Product Name</h1>
+        <p>Discover the amazing features of our product!</p>
+    </header>
+
+    <section id="productDetails">
+        <!-- Add your product details here -->
+        <button onclick="addPhoto()">Add Photo</button>
+        <img id="productImage" src="" alt="Product Image" style="display: none;">
+    </section>
+
+    <section id="promotion">
+        <h2>Special Promotion!</h2>
+        <p>For a limited time, get a discount on your purchase!</p>
+        <button onclick="showPromoCode()">Reveal Promo Code</button>
+        <p id="promoCode" style="display: none;">Use code: PROMO123</p>
+    </section>
+
+    <section id="userAuth">
+        <h2>User Authentication</h2>
+        <form id="loginForm" onsubmit="event.preventDefault(); login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="generatePassword()">Generate Password</button>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <button onclick="makePayment()">Make Payment</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
